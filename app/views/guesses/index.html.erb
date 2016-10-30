@@ -1,0 +1,51 @@
+<h1>A Quick Puzzle to Test Your Problem Solving</h1>
+
+<p>A short game sheds light on government policy, corporate America and why no one likes to be wrong.</p>
+
+<p>Here’s how it works:</p>
+
+<p>We’ve chosen a rule that some sequences of three numbers obey — and some do not. Your job is to guess what the rule is.</p>
+
+<p>We’ll start by telling you that the sequence 2, 4, 8 obeys the rule:</p>
+
+<ul>
+  <li>2, 4, 8 Obeys the rule</li>
+</ul>
+
+<p>Now it’s your turn. Enter a number sequence in the boxes below, and we’ll tell you whether it satisfies the rule or not. You can test as many sequences as you want.</p>
+
+
+<ul>
+  <li><%= @full_guess %></li>
+</ul>
+
+<p>Enter a sequence:</p>
+
+<form class="" action="http://localhost:3000/all_guesses">
+
+  <label for="first">First number:</label>
+  <input name="first" id="first" type="text" placeholder="First number">
+
+  <label for="second">Second number:</label>
+  <input name="second" id="second" type="text" placeholder="Second number">
+
+  <label for="third">Third number:</label>
+  <input name="third" id="third" type="text" placeholder="Third number">
+
+  <button>Check</button>
+</form>
+
+<hr>
+<p>When you think you know the rule, describe it in words below and then submit your answer. Make sure you’re right; you won’t get a second chance.</p>
+
+<form action="http://localhost:3000/show_answer">
+  <label for="answer">Your answer:</label>
+
+  <textarea name="q" id="answer" rows="1" cols="40" placeholder="Type the rule"></textarea>
+
+  <button>I think I know it</button>
+</form>
+
+<hr>
+
+<a href="http://localhost:3000/show_answer">Reset</a>
